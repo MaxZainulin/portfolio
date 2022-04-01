@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first project ^_^</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--  <style>
+        .preloader {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;  
+        }
+        .preloader__loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        </style>
+        -->
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-2 col-lg-3 col-7"><div class="logo"> MAXIM ZAINULIN </div></div>
+                <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">        
+                    <div class="menu">
+                    <ul>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">My knowledge</a></li>
+                    <li><a href="#">Example</a></li>
+                    <li><a href="#">My english</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div></div>
+                <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                    <div class="dropdown">
+                        <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                          Меню
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </nav>
+    </header>
+    <main>
+    <section class="main">
+        <div class="container h-100"><div class="row align-items-center h-100"><div class="col-lg-6 mt-5 pt-5">
+            <div class="title_container mt-5 pt-3">
+            <h1>Hello , <br>I'm Maxim Zainulin</h1>
+            <h4>Junior frontend developer</h4>
+            <hr class="mx-auto text-danger mt-4" width="350" size="9"/>
+            <input type="button" value="About me"> 
+            <input type="button" value="My knowledge">
+            </div></div></div></div>
+    </section>
+
+    <section class="infoaboutme">
+    <div class="container">
+    <div class="info ">
+        <div class="aboutMe text-center mb-5">
+        <h2>ABOUT ME</h2>
+        </div>
+        <hr class="mx-auto" width="100" size="8"/>
+        <br/>
+        <img src="img/aboutme.jpg" class="img-fluid d-block mx-auto mt-5 mb-5" alt="">
+        <h4 class="mb-5"> Hi! My name is Maxim, I think you've already figured it out) I am a second-year student at one of the best universities not only in Almaty, but also in Kazakhstan. </h4>
+        <h4>I really like web programming and I really want to become a frontend developer first, and then a full stack :D My strengths and general knowledge can be found below</h4>
+        <input class="d-block mx-auto mt-5" type="submit" value="Scroll below">
+    </div>
+    </div>
+</section>
+    
+
+    <div class="myskills pt-5">
+        <div class="headerSkill text-center pt-5">
+            <h2>My knowledge and skills</h2>
+        </div>
+        <hr class="mx-auto mt-5" width="100" size="8"/>
+        <br/>
+        <div class="container pb-5">
+        <div class="infoSkill row mt-5 px-5 mb-5">
+        <div class="skill1 col mt-5 text-center">
+            <img src="img/notebook.png" class="rounded mx-auto d-block mb-4" alt="">
+            <h3>HTML5</h3>
+            <h4 class="mt-3"></h4>
+        </div>
+        <div class="skill2 col mt-5 text-center">
+            <img src="img/symbol.png" class="rounded mx-auto d-block mb-4" alt="">
+            <h3>CSS3,css</h3>
+            <h4 class="mt-3"></h4>
+        </div>
+        <div class="skill3 col mt-5 text-center">
+            <img src="img/rocket.png" class="rounded mx-auto d-block mb-4" alt="">
+            <h3>JavaScript</h3>
+            <h4 class="mt-3"></h4>
+        </div>
+        <div class="skill4 col mt-5 text-center">
+            <img src="img/gramophone.png" class="rounded mx-auto d-block mb-4" alt="">
+            <h3>BootStrap</h3>
+            <h4 class="mt-3"></h4>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="cases mt-5">
+        <h2 class="text-center">Example of my code on JavaScript</h3>
+        <hr class="mx-auto mt-5 mb-5" width="400" size="8"/>
+
+        <h5 class="text-center">Здесь я сделал обычный калькулятор подсчета стоимости верстки сайта</h4>
+        <div class="exampleJs">
+            <div class="text-start mx-5 mt-5 px-5">
+                <button class="accordion">Example 1</button>
+                <div class="panel">
+                <pre>
+            <code>
+let costBuild = 0;
+
+function typeSite() {
+    let userChoice1 = prompt("Какой тип сайта? (Портал, Визитка, Каталог, Магазин, Другое)");
+    if (userChoice1 == "Портал"){
+        costBuild = 500;
+    } else if (userChoice1 == "Визитка"){
+        costBuild = 200;
+    } else if (userChoice1 == "Каталог"){
+        costBuild = 600;
+    } else if (userChoice1 == "Магазин"){
+        costBuild = 1000;
+    } else if (userChoice1 == "Другое"){
+        costBuild = 100;
+    }
+    return costBuild;
+}
+
+    let costDesign = 0;
+
+    function designSite(){
+        let userChoice2 = prompt("Какой дизайн сайта? (Минимализм, Стандарт, Средний, Балдежный)");
+        if (userChoice2 == "Минимализм"){
+            costDesign = 250;
+        } else if (userChoice2 == "Стандарт"){
+            costDesign = 400;
+        } else if (userChoice2 == "Средний"){
+            costDesign = 800;
+        } else if (userChoice2 == "Балдежный"){
+            costDesign = 1200;
+        }
+        return costDesign;
+    }
+
+    let costAdaptive = 0;
+
+    function adaptiveSite(){
+        let userChoice3 = prompt("Нужна адаптивность? (Да, Нет)");
+        if (userChoice3 == "Да"){
+            costAdaptive = 800;
+        } else if (userChoice3 == "Нет"){
+            costAdaptive = 0;
+        }
+        return costAdaptive;
+    }
+    let costSum = typeSite(costBuild) + designSite(costDesign) + adaptiveSite(costAdaptive);
+
+    alert(name + " Ваш сайт будет стоить: " + costSum);
+
+};
+</pre>
+</code>
+</div>
+<button class="accordion">Example 2</button>
+                <div class="panel">
+                <pre>
+            <code>
+                const name = prompt("Пожалуйста, представьтесь?", "Имя");
+                alert("Добро пожаловать, " + name);
+             
+             
+             const age = prompt("Подтвердите, что вы совершеннолетний! Укажите ваш возраст!", "Возраст");
+             if(age >= 18) {
+                 alert("Вам есть 18 :)");
+             }else {
+                 alert("Приходите позже, вам нет 18 :( ");
+             }  
+</pre>
+</code>
+</div>
+        </div>
+    </div>
+</div>
+    </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="myenglish">
+        <div class="english-title text-center mt-5">
+            <h2>My level of English</h2>
+        </div>
+        <hr class="mx-auto mt-5 mb-5" width="250" size="8"/>
+        <div class="english-text text-center">
+            <h3>I don't know English very well, but my level is pre-intermediate. I study English whenever possible and I also study at a university where everything is taught in English/Russian</h3>
+        </div>
+    </div>
+    </div>
+
+
+<div class="container">
+    <div class="contact-title">
+        <h3 style="text-align:center;">Contacts</h3>
+      
+        <div class="ico-wrap"> <a class="telegram"><img src="./img/telegram.png" alt=""></a>
+        </div>
+        <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">Telegram</h4>
+        <div class="aio-icon-description"></div>
+        </div>
+      
+        <span class="kesednsoled"></span>
+      
+        <div class="ico-wrap"> <i class="vk-link"><img src="./img/vk.png" alt=""></i>
+        </div>
+        <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">VKontakt</h4>
+        <div class="aio-icon-description"></div>
+        </div>
+      
+        <span class="kesednsoled"></span>
+      
+        <div class="ico-wrap">
+        <i class="email-link"><img src="./img/email.png" alt=""></i>
+        </div>
+        <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">Email:</h4>
+        <div class="aio-icon-description">m-zainulin@mail.ru</div>
+        </div>
+      
+        <span class="kesednsoled"></span>
+      
+        <div class="ico-wrap">
+        <i class="phone-number"><img src="./img/phone.png" alt=""></i>
+        </div>
+        <div class="meanous-andscoev">
+        <h4 class="aio-icon-title">My contacts phone</h4>
+        <div class="aio-icon-description">8 (747) 676-68-67</div>
+        </div>
+      
+        <span class="kesednsoled"></span>
+      
+      </div>
+    </div>
+      
+
+
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for( i = 0; i <acc.length;i++){
+            acc[i].addEventListener("click", function(){
+                this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight= panel.scrollHeight + "px";
+            }
+            });
+        }
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
